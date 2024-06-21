@@ -5,4 +5,50 @@
   box-sizing: border-box;
   font-family: "Quattrocento", serif;
   font-size: 18px;
+}
+
+.header__container {
+  margin: 33px 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__container__nav-ul {
+  list-style: none;
+  display: flex;
+  column-gap: 56px;
+}
+.header__container__nav-ul li a {
+  color: #303030;
+  text-decoration: none;
+  position: relative;
+}
+.header__container__nav-ul li a:hover::before, .header__container__nav-ul li a.active::before {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: #CAC6BB;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.header__container__nav-ul li a:active {
+  font-weight: 800;
+}
+.header__container__aside-ul {
+  list-style: none;
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+.header__container__aside-ul li {
+  transition-duration: 1s;
+}
+.header__container__aside-ul li:hover {
+  transform: scale(1.4);
+  transition-duration: 1.5s;
+}
+.header__container__aside-ul li:active {
+  transform: scale(0.9);
+  transition-duration: 0.2s;
 }/*# sourceMappingURL=style.css.map */
