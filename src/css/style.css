@@ -10,13 +10,14 @@
 .header__container {
   margin: 33px 160px;
   display: flex;
+  column-gap: 300px;
   align-items: center;
   justify-content: space-between;
 }
 .header__container__nav-ul {
   list-style: none;
   display: flex;
-  column-gap: 56px;
+  column-gap: 50px;
 }
 .header__container__nav-ul li a {
   color: #303030;
@@ -52,12 +53,22 @@
   transform: scale(0.9);
   transition-duration: 0.2s;
 }
+.header__container__container__a {
+  margin-right: 150px;
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .main__container {
   margin-left: 160px;
   margin-right: 160px;
   display: grid;
   grid-template-areas: "head head head" "service hero web" "service hero web";
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .main__container__h1 {
   grid-area: head;
@@ -71,9 +82,77 @@
 .main__container__services {
   grid-area: service;
 }
-.main__container__hero {
-  grid-area: hero;
+.main__container__services h3 {
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  margin-bottom: 32px;
 }
-.main__container__web {
+.main__container__services__article {
+  margin-bottom: 33px;
+  max-width: 60%;
+}
+.main__container__services__article-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+.main__container__services__article-flex-img {
+  background-color: #FFFFFF;
+  padding: 12px;
+}
+.main__container__services__article-flex-desc p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.main__container__services__article-p {
+  color: #909090;
+  line-height: 32px;
+}
+.main__container__services__hero {
+  grid-area: hero;
+  text-align: center;
+}
+.main__container__services__web {
   grid-area: web;
+}
+.main__container__hero {
+  text-align: center;
+}
+.main__container__web-top {
+  margin-bottom: 73px;
+}
+.main__container__web-top h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.main__container__web-top p {
+  color: #909090;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 76%;
+  margin-bottom: 48px;
+}
+.main__container__web-top a {
+  padding: 10px 36px;
+  background-color: #303030;
+  color: #F6F6F6;
+}
+.main__container__web-botton-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main__container__web-botton-grid-item h4 {
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.main__container__web-botton-grid-item p {
+  color: #909090;
 }/*# sourceMappingURL=style.css.map */

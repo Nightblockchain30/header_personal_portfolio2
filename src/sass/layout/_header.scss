@@ -1,6 +1,7 @@
 .header__container {
     margin: 33px 160px;
     display: flex;
+    column-gap: 300px;
     align-items: center;
     justify-content: space-between;
 
@@ -8,7 +9,7 @@
         &-ul {
             list-style: none;
             display: flex;
-            column-gap: 56px;
+            column-gap: 50px;
 
             li {
                 a {
@@ -57,5 +58,9 @@
                 }
             }
         }
+    }
+
+    &__container__a {
+        margin-right: 150px;
     }
 }
