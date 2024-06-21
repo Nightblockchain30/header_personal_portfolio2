@@ -2,10 +2,12 @@
     margin-left: 160px;
     margin-right: 160px;
     display: grid;
+    align-items: center;
+    justify-content: space-between;
     grid-template-areas: "head head head"
         "service hero web"
         "service hero web";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: .8fr 1fr .8fr;
 
     &__h1 {
         grid-area: head;

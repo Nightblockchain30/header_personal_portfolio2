@@ -10,9 +10,8 @@
 .header__container {
   margin: 33px 160px;
   display: flex;
-  column-gap: 300px;
+  column-gap: 400px;
   align-items: center;
-  justify-content: space-between;
 }
 .header__container__nav-ul {
   list-style: none;
@@ -41,6 +40,7 @@
   display: flex;
   column-gap: 32px;
   align-items: center;
+  margin-left: 150px;
 }
 .header__container__aside-ul li {
   transition-duration: 1s;
@@ -67,8 +67,10 @@ body {
   margin-left: 160px;
   margin-right: 160px;
   display: grid;
+  align-items: center;
+  justify-content: space-between;
   grid-template-areas: "head head head" "service hero web" "service hero web";
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
 }
 .main__container__h1 {
   grid-area: head;
