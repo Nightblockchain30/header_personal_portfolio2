@@ -51,4 +51,29 @@
 .header__container__aside-ul li:active {
   transform: scale(0.9);
   transition-duration: 0.2s;
+}
+
+.main__container {
+  margin-left: 160px;
+  margin-right: 160px;
+  display: grid;
+  grid-template-areas: "head head head" "service hero web" "service hero web";
+}
+.main__container__h1 {
+  grid-area: head;
+  text-align: center;
+}
+.main__container__h1 h1 {
+  font-size: 96px;
+  font-family: "Oswald", sans-serif;
+  color: #303030;
+}
+.main__container__services {
+  grid-area: service;
+}
+.main__container__hero {
+  grid-area: hero;
+}
+.main__container__web {
+  grid-area: web;
 }/*# sourceMappingURL=style.css.map */

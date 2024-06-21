@@ -1,0 +1,34 @@
+.main__container {
+    margin-left: 160px;
+    margin-right: 160px;
+    display: grid;
+    grid-template-areas: "head head head"
+        "service hero web"
+        "service hero web";
+
+    &__h1 {
+        grid-area: head;
+        // grid-column-start: 1;
+        // grid-column-end: 4;
+        text-align: center;
+
+        h1 {
+            font-size: 96px;
+            font-family: $second-font;
+            color: $black;
+        }
+
+    }
+
+    &__services {
+        grid-area: service;
+    }
+
+    &__hero {
+        grid-area: hero;
+    }
+
+    &__web {
+        grid-area: web;
+    }
+}
