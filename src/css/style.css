@@ -91,6 +91,7 @@ body {
   justify-content: space-between;
   column-gap: 60px;
   max-height: 700px;
+  margin-bottom: 113px;
 }
 .main__container__flex__services {
   min-width: 390px;
@@ -145,6 +146,7 @@ body {
   transition-timing-function: ease-in-out;
   transition-duration: 4s;
   transition-property: all;
+  transition-delay: 2s;
 }
 .main__container__flex__web {
   margin-top: 140px;
@@ -174,6 +176,18 @@ body {
   background-color: #303030;
   color: #F6F6F6;
   text-decoration: none;
+  transition: all 1s;
+}
+.main__container__flex__web-top a:hover {
+  background-color: #CAC6BB;
+  color: #303030;
+  padding: 14px 48px;
+  transition: padding ease 1s;
+  font-weight: 800;
+}
+.main__container__flex__web-top a:active {
+  background-color: #303030;
+  color: #F6F6F6;
 }
 .main__container__flex__web-botton-grid {
   display: grid;

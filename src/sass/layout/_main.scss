@@ -31,6 +31,7 @@
         justify-content: space-between;
         column-gap: 60px;
         max-height: 700px;
+        margin-bottom: 113px;
 
         &__services {
             // grid-area: service;
@@ -111,6 +112,7 @@
                 transition-timing-function: ease-in-out;
                 transition-duration: 4s;
                 transition-property: all;
+                transition-delay: 2s;
             }
         }
 
@@ -144,6 +146,20 @@
                     background-color: $black;
                     color: $white;
                     text-decoration: none;
+                    transition: all 1s;
+
+                    &:hover {
+                        background-color: #CAC6BB;
+                        color: $black;
+                        padding: 14px 48px;
+                        transition: padding ease 1s;
+                        font-weight: 800;
+                    }
+
+                    &:active {
+                        background-color: $black;
+                        color: $white;
+                    }
 
                 }
             }
