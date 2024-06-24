@@ -68,7 +68,6 @@ body {
   margin-right: 160px;
 }
 .main__container__h1 {
-  grid-area: head;
   text-align: center;
   margin-bottom: 47px;
 }
@@ -76,21 +75,33 @@ body {
   font-size: 96px;
   font-family: "Oswald", sans-serif;
   color: #303030;
+  position: relative;
+}
+.main__container__h1 h1::before {
+  content: "";
+  width: 90px;
+  height: 4px;
+  position: absolute;
+  background-color: #CAC6BB;
+  top: 140px;
+  left: 435px;
 }
 .main__container__flex {
   display: flex;
   justify-content: space-between;
   column-gap: 60px;
+  max-height: 700px;
 }
 .main__container__flex__services {
   min-width: 390px;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .main__container__flex__services h3 {
   font-size: 32px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   margin-bottom: 32px;
+  color: #303030;
 }
 .main__container__flex__services__article {
   margin-bottom: 33px;
@@ -99,8 +110,6 @@ body {
 .main__container__flex__services__article-flex {
   display: flex;
   align-items: center;
-  column-gap: 16px;
-  margin-bottom: 16px;
 }
 .main__container__flex__services__article-flex-img {
   background-color: #FFFFFF;
@@ -121,21 +130,8 @@ body {
 .main__container__flex__services__web {
   grid-area: web;
 }
-.main__container__flex__hero {
-  min-width: 690px;
-  background-image: url("../img/backgrund-hero.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: 0px 150px;
-}
-.main__container__flex__hero img {
-  position: absolute;
-  top: -50px;
-  right: 60px;
-}
 .main__container__flex__web {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .main__container__flex__web-top {
   margin-bottom: 73px;
@@ -146,6 +142,7 @@ body {
   font-size: 30px;
   margin-bottom: 32px;
   width: 100%;
+  color: #303030;
 }
 .main__container__flex__web-top p {
   color: #909090;
@@ -157,9 +154,10 @@ body {
   margin-bottom: 48px;
 }
 .main__container__flex__web-top a {
-  padding: 10px 36px;
+  padding: 12px 38px;
   background-color: #303030;
   color: #F6F6F6;
+  text-decoration: none;
 }
 .main__container__flex__web-botton-grid {
   display: grid;
@@ -171,6 +169,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #303030;
 }
 .main__container__flex__web-botton-grid-item p {
   color: #909090;
