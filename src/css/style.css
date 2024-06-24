@@ -80,7 +80,7 @@ body {
 .main__container__flex {
   display: flex;
   justify-content: space-between;
-  column-gap: 110px;
+  column-gap: 60px;
 }
 .main__container__flex__services {
   min-width: 390px;
@@ -122,7 +122,17 @@ body {
   grid-area: web;
 }
 .main__container__flex__hero {
-  text-align: center;
+  min-width: 690px;
+  background-image: url("../img/backgrund-hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 0px 150px;
+}
+.main__container__flex__hero img {
+  position: absolute;
+  top: -50px;
+  right: 60px;
 }
 .main__container__flex__web {
   margin-top: 100px;
@@ -154,6 +164,7 @@ body {
 .main__container__flex__web-botton-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-width: 350px;
 }
 .main__container__flex__web-botton-grid-item h4 {
   font-size: 32px;
@@ -163,4 +174,7 @@ body {
 }
 .main__container__flex__web-botton-grid-item p {
   color: #909090;
+}
+.main__container__flex__web-botton-grid .item2 {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */

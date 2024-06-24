@@ -27,7 +27,7 @@
     &__flex {
         display: flex;
         justify-content: space-between;
-        column-gap: 110px;
+        column-gap: 60px;
 
         &__services {
             // grid-area: service;
@@ -81,7 +81,18 @@
         }
 
         &__hero {
-            text-align: center;
+            min-width: 690px;
+            background-image: url("../img/backgrund-hero.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            background-position: 0px 150px;
+
+            img {
+                position: absolute;
+                top: -50px;
+                right: 60px;
+            }
         }
 
         &__web {
@@ -120,6 +131,7 @@
                 &-grid {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    max-width: 350px;
 
                     &-item {
                         h4 {
@@ -132,6 +144,10 @@
                         p {
                             color: $grey;
                         }
+                    }
+
+                    .item2 {
+                        margin-left: 20px;
                     }
                 }
             }
