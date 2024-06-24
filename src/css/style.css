@@ -10,8 +10,8 @@
 .header__container {
   margin: 33px 160px;
   display: flex;
-  column-gap: 400px;
   align-items: center;
+  justify-content: space-between;
 }
 .header__container__nav-ul {
   list-style: none;
@@ -66,72 +66,78 @@ body {
 .main__container {
   margin-left: 160px;
   margin-right: 160px;
-  display: grid;
-  align-items: center;
-  justify-content: space-between;
-  grid-template-areas: "head head head" "service hero web" "service hero web";
-  grid-template-columns: 0.8fr 1fr 0.8fr;
 }
 .main__container__h1 {
   grid-area: head;
   text-align: center;
+  margin-bottom: 47px;
 }
 .main__container__h1 h1 {
   font-size: 96px;
   font-family: "Oswald", sans-serif;
   color: #303030;
 }
-.main__container__services {
-  grid-area: service;
+.main__container__flex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 110px;
 }
-.main__container__services h3 {
+.main__container__flex__services {
+  min-width: 390px;
+  margin-top: 100px;
+}
+.main__container__flex__services h3 {
   font-size: 32px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   margin-bottom: 32px;
 }
-.main__container__services__article {
+.main__container__flex__services__article {
   margin-bottom: 33px;
   max-width: 60%;
 }
-.main__container__services__article-flex {
+.main__container__flex__services__article-flex {
   display: flex;
   align-items: center;
   column-gap: 16px;
   margin-bottom: 16px;
 }
-.main__container__services__article-flex-img {
+.main__container__flex__services__article-flex-img {
   background-color: #FFFFFF;
   padding: 12px;
 }
-.main__container__services__article-flex-desc p {
+.main__container__flex__services__article-flex-desc p {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
 }
-.main__container__services__article-p {
+.main__container__flex__services__article-p {
   color: #909090;
   line-height: 32px;
 }
-.main__container__services__hero {
+.main__container__flex__services__hero {
   grid-area: hero;
   text-align: center;
 }
-.main__container__services__web {
+.main__container__flex__services__web {
   grid-area: web;
 }
-.main__container__hero {
+.main__container__flex__hero {
   text-align: center;
 }
-.main__container__web-top {
-  margin-bottom: 73px;
+.main__container__flex__web {
+  margin-top: 100px;
 }
-.main__container__web-top h3 {
+.main__container__flex__web-top {
+  margin-bottom: 73px;
+  min-width: 540px;
+}
+.main__container__flex__web-top h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 32px;
   width: 100%;
 }
-.main__container__web-top p {
+.main__container__flex__web-top p {
   color: #909090;
   line-height: 32px;
   display: flex;
@@ -140,21 +146,21 @@ body {
   max-width: 76%;
   margin-bottom: 48px;
 }
-.main__container__web-top a {
+.main__container__flex__web-top a {
   padding: 10px 36px;
   background-color: #303030;
   color: #F6F6F6;
 }
-.main__container__web-botton-grid {
+.main__container__flex__web-botton-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.main__container__web-botton-grid-item h4 {
+.main__container__flex__web-botton-grid-item h4 {
   font-size: 32px;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.main__container__web-botton-grid-item p {
+.main__container__flex__web-botton-grid-item p {
   color: #909090;
 }/*# sourceMappingURL=style.css.map */

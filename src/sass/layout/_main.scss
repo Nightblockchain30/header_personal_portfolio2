@@ -1,19 +1,20 @@
 .main__container {
     margin-left: 160px;
     margin-right: 160px;
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    grid-template-areas: "head head head"
-        "service hero web"
-        "service hero web";
-    grid-template-columns: .8fr 1fr .8fr;
+    // display: grid;
+    // align-items: center;
+    // justify-content: space-between;
+    // grid-template-areas: "head head head"
+    //     "service hero web"
+    //     "service hero web";
+    // grid-template-columns: .8fr 1fr .8fr;
 
     &__h1 {
         grid-area: head;
         // grid-column-start: 1;
         // grid-column-end: 4;
         text-align: center;
+        margin-bottom: 47px;
 
         h1 {
             font-size: 96px;
@@ -23,103 +24,114 @@
 
     }
 
-    &__services {
-        grid-area: service;
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 110px;
 
-        h3 {
-            font-size: 32px;
-            font-family: $second-font;
-            font-weight: 600;
-            margin-bottom: 32px;
-        }
+        &__services {
+            // grid-area: service;
+            min-width: 390px;
+            margin-top: 100px;
 
-        &__article {
-            margin-bottom: 33px;
-            max-width: 60%;
-
-            &-flex {
-                display: flex;
-                align-items: center;
-                column-gap: 16px;
-                margin-bottom: 16px;
-
-                &-img {
-                    background-color: #FFFFFF;
-                    padding: 12px;
-                }
-
-                &-desc p {
-                    font-family: $second-font;
-                    font-weight: 600;
-
-                }
+            h3 {
+                font-size: 32px;
+                font-family: $second-font;
+                font-weight: 600;
+                margin-bottom: 32px;
             }
 
-            &-p {
-                color: $grey;
-                line-height: 32px;
+            &__article {
+                margin-bottom: 33px;
+                max-width: 60%;
+
+                &-flex {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+                    margin-bottom: 16px;
+
+                    &-img {
+                        background-color: #FFFFFF;
+                        padding: 12px;
+                    }
+
+                    &-desc p {
+                        font-family: $second-font;
+                        font-weight: 600;
+                    }
+                }
+
+                &-p {
+                    color: $grey;
+                    line-height: 32px;
+                }
+
             }
 
+            &__hero {
+                grid-area: hero;
+                text-align: center;
+            }
+
+            &__web {
+                grid-area: web;
+
+            }
         }
 
         &__hero {
-            grid-area: hero;
             text-align: center;
         }
 
         &__web {
-            grid-area: web;
-        }
-    }
+            margin-top: 100px;
 
-    &__hero {
-        text-align: center;
-    }
+            &-top {
+                margin-bottom: 73px;
+                min-width: 540px;
 
-    &__web {
-        &-top {
-            margin-bottom: 73px;
+                h3 {
+                    font-family: $second-font;
+                    font-size: 30px;
+                    margin-bottom: 32px;
+                    width: 100%;
+                }
 
-            h3 {
-                font-family: $second-font;
-                font-size: 32px;
-                margin-bottom: 32px;
-                width: 100%;
+                p {
+                    color: $grey;
+                    line-height: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    max-width: 76%;
+                    margin-bottom: 48px;
+                }
+
+                a {
+                    padding: 10px 36px;
+                    background-color: $black;
+                    color: $white;
+
+                }
             }
 
-            p {
-                color: $grey;
-                line-height: 32px;
-                display: flex;
-                flex-direction: column;
-                row-gap: 30px;
-                max-width: 76%;
-                margin-bottom: 48px;
-            }
+            &-botton {
+                &-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
 
-            a {
-                padding: 10px 36px;
-                background-color: $black;
-                color: $white;
+                    &-item {
+                        h4 {
+                            font-size: 32px;
+                            font-family: $second-font;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
 
-            }
-        }
-
-        &-botton {
-            &-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-
-                &-item {
-                    h4 {
-                        font-size: 32px;
-                        font-family: $second-font;
-                        font-weight: 600;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        color: $grey;
+                        p {
+                            color: $grey;
+                        }
                     }
                 }
             }

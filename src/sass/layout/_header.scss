@@ -1,8 +1,8 @@
 .header__container {
     margin: 33px 160px;
     display: flex;
-    column-gap: 400px;
     align-items: center;
+    justify-content: space-between;
 
     &__nav {
         &-ul {
